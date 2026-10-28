@@ -6,6 +6,55 @@
   <!-- I MADE A WEBSITE I MADE A WEBSITE -->
 </head>
 <style>
+
+    @keyframes mainIntroAnim {
+      from {opacity: 0%; translate: 0px -25px;}
+      to {opacity: 100%; translate: 0px 25px;}
+    }
+    @keyframes textIntroAnim {
+      from {opacity: 0%; translate: 0px -10px;}
+      to {opacity: 100%; translate: 0px 10px;}
+    }
+    @keyframes pfpIntroAnim {
+      from {opacity: 0%; translate: 5px;}
+      to {opacity: 100%; translate: -5px;}
+    }
+    div.section1{
+      margin-top: 5%;
+      background-color: rgba(49, 49, 97, 0.9);
+      height: 400px;
+      width:auto;
+      /* outline-style: auto;
+      outline-width: 200px; */
+      /* outline-color: rgb(0, 0, 0);
+      outline: auto; */
+      opacity: 0%;
+      animation-name: mainIntroAnim;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+
+    }
+    div.name-pronounciation{
+      color: rgb(157, 151, 151);
+      text-align: left;
+      position: relative;
+      bottom: 100%;
+      font-size: 15px;
+      margin-left: 2%;
+      margin-top: -6%;
+      text-shadow: -5px 5px black;
+      transition: opacity 0.5s;
+
+    }
+    .name-pronounciation {
+      opacity: 0%;
+    }
+
+    .sectionTitle:hover + .name-pronounciation {
+      opacity: 100%;
+    }
+    
     h1{
       background-color: rgb(66, 73, 73);
       color: rgb(157, 151, 151);
@@ -13,13 +62,70 @@
     }
     p.Test{
       color: white;
-      margin: 5%;
+      margin: 0%;
+      right: 0%;
+      text-align: right;
+      /* right: 25%; */
       /* background-color:  rgb(66, 73, 73); */
     }
-    img.ImagePart{
-      width: 25%;
-      height: 25%;
+    h2.sectionTitle{ 
+      color: rgb(157, 151, 151);
+      text-align: left;
+      position: relative;
+      bottom: 100%;
+      font-size: 75px;
+      margin-left: 2%;
+      margin-top: 8%;
+      text-shadow: 3px 3px black;
+      animation-name: textIntroAnim;
+      animation-duration: 1.25s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    h3.pronouns{ 
+      color: rgb(157, 151, 151);
+      text-align: left;
+      position: relative;
+      bottom: 124%;
       
+      font-size: 20px;
+      margin-left: 38%;
+      margin-top: -0%;
+      text-shadow: 3px 3px black;
+      animation-name: textIntroAnim;
+      animation-duration: 1.25s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    p.sectionDescription{ 
+      color: rgb(157, 151, 151);
+      text-align: left;
+      position: relative;
+      bottom: 100%;
+      font-size: 20px;
+      margin-left: 2%;
+      margin-top: -1%;
+      animation-name: textIntroAnim;
+      animation-duration: 1.25s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    img.ImagePart{
+      width: 28%;
+      height: 85%;
+      
+      border-radius: 0;
+      margin-left: 2%;
+      margin-bottom: 0%;
+      margin-top: 3%;
+      animation-name: pfpIntroAnim;
+      animation-duration: 1.25s;
+      opacity: 0%;
+      translate: -5px;
+      animation-iteration-count: 1;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      margin-left: 70%;
     }
     section{
       background-color: rgba(128, 128, 252, 0.329);
@@ -32,6 +138,8 @@
     img.bigImage{
       width: 50%;
       height: 50%;
+      display: block;
+      margin-right: auto;
     }
     body{
     background-image:url('https://strpointless.github.io/WildLogo.png');
@@ -48,23 +156,31 @@
     color: rgb(119, 129, 129);
     position: absolute;
     bottom: 0;
-    opacity: 90%;
+    opacity: 0%;
     }
 </style>
 <body style="background-color:black;">
-   <section>
-    <h1>Who am I?</h1>
-    <p class="Test">add text about me</p>
-    <img class="ImagePart" src="https://strpointless.github.io/photoRef.png"/>
+   <div class="section1">
+    <img class="ImagePart" src="https://strpointless.github.io/photoRef.png" />
+    <h3 class="pronouns">(he/him)</h3>
+    <h2 class="sectionTitle">Jaliel Clark</h2>
+    <div class="name-pronounciation">pronounced [JAH-LEEL]</div>
+        
+    <p class="sectionDescription">Aspiring Game Developer, specialzing in a mix of programming,<br>
+      art, animation, and music.
+      <br>
+      <br>
+      <br>
+      <br>
+      Check out some of the examples of what I can do below!
+    </p>
     <!-- <img class="bigImage" src="https://strpointless.github.io/WildLogo.png" alt="Italian Trulli"> -->
   </section>
   <section>
-    <h1>Section 2: What i do</h1>
     <p class="Test">add text about what i do</p>
     <!-- <img class="bigImage" src="https://strpointless.github.io/WildLogo.png" alt="Italian Trulli"> -->
   </section>
-     <section>
-    <h1>Section 3: Current projects & Most recent: About me</h1>
+  <section>
     <p class="Test">show off the projects</p>
     <!-- <img class="bigImage" src="https://strpointless.github.io/WildLogo.png" alt="Italian Trulli"> -->
   </section>
